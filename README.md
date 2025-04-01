@@ -76,8 +76,4 @@ auth-system/
    http://localhost:3000
    ```
 
-## 🔒 Authentication Flow
 
-- Register → `/register`
-- Login → `/login`
-- Access Dashboard → `/dashboard`
