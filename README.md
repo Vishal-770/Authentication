@@ -1,5 +1,4 @@
-markdown
-Copy
+
 # 🔐 Node.js Authentication System
 
 A simple yet secure authentication system built with Node.js, Express, and MongoDB. Features user registration, login, JWT token-based authentication, and protected routes.
@@ -13,23 +12,24 @@ A simple yet secure authentication system built with Node.js, Express, and Mongo
 - **Session Management**: cookie-parser
 
 ## 📂 File Structure
+
+```
 auth-system/
 ├── controllers/
-│ ├── authController.js
+│   ├── authController.js
 ├── models/
-│ ├── User.js
+│   ├── User.js
 ├── routes/
-│ ├── authRoutes.js
+│   ├── authRoutes.js
 ├── views/
-│ ├── login.ejs
-│ ├── register.ejs
-│ ├── dashboard.ejs
+│   ├── login.ejs
+│   ├── register.ejs
+│   ├── dashboard.ejs
 ├── node_modules/
 ├── package.json
 ├── package-lock.json
 └── server.js
-
-Copy
+```
 
 ## ✨ Features
 
@@ -42,42 +42,42 @@ Copy
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (v14+)
 - MongoDB Atlas URI or local MongoDB instance
 
 ### Installation
+
 1. Clone the repo:
    ```bash
    git clone https://github.com/Vishal-770/auth-system.git
    cd auth-system
-Install dependencies:
+   ```
 
-bash
-Copy
-npm install
-Create .env file:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-env
-Copy
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-PORT=3000
-Start the server:
+3. Create `.env` file:
+   ```env
+   MONGODB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret_key
+   PORT=3000
+   ```
 
-bash
-Copy
-npm start
-Open in browser:
+4. Start the server:
+   ```bash
+   npm start
+   ```
 
-Copy
-http://localhost:3000
-🔒 Authentication Flow
-Register → /register
+5. Open in browser:
+   ```
+   http://localhost:3000
+   ```
 
-Login → /login
+## 🔒 Authentication Flow
 
-Access Dashboard → /dashboard
-
-Copy
-
-Just copy everything between the triple backticks and paste into your README.md file! The formatting will work perfectly on GitHub/GitLab.
+- Register → `/register`
+- Login → `/login`
+- Access Dashboard → `/dashboard`
