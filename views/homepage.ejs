@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuthSecure | Professional Authentication System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                600: "#2563eb",
+                700: "#1d4ed8",
+              },
+              secondary: {
+                600: "#059669",
+                700: "#047857",
+              },
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .hero-pattern {
+        background-image: radial-gradient(
+          circle at 25% 50%,
+          rgba(37, 99, 235, 0.1) 0%,
+          transparent 50%
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <i class="fas fa-lock text-primary-600 text-2xl mr-2"></i>
+              <span class="text-xl font-bold text-gray-900">AuthSecure</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <a
+              href="/auth/login"
+              class="px-4 py-2 text-sm font-medium text-primary-600 hover:text-primary-700"
+              >Login</a
+            >
+            <a
+              href="/auth/login"
+              class="px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-md hover:bg-primary-700 transition-colors duration-200"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-pattern">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+          <div class="mb-12 lg:mb-0">
+            <h1
+              class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
+            >
+              <span class="block">Secure Authentication</span>
+              <span class="block text-primary-600">For Modern Apps</span>
+            </h1>
+            <p class="mt-3 text-xl text-gray-500">
+              Our professional authentication system provides enterprise-grade
+              security with simple integration.
+            </p>
+            <div class="mt-8 flex space-x-4">
+              <a
+                href="/auth/login"
+                class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 transition-colors duration-200"
+              >
+                <i class="fas fa-sign-in-alt mr-2"></i> Login
+              </a>
+              <a
+                href="/auth/login"
+                class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-primary-600 bg-white border-primary-600 hover:bg-gray-50 transition-colors duration-200"
+              >
+                <i class="fas fa-user-plus mr-2"></i> Sign Up
+              </a>
+            </div>
+          </div>
+          <div class="relative animate-float">
+            <div
+              class="bg-white p-8 rounded-xl shadow-xl border border-gray-100"
+            >
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary-100 mx-auto mb-6"
+              >
+                <i class="fas fa-lock text-primary-600 text-xl"></i>
+              </div>
+              <h3 class="text-lg font-medium text-center text-gray-900 mb-4">
+                Secure Access
+              </h3>
+              <div class="space-y-4">
+                <div class="h-4 bg-gray-100 rounded"></div>
+                <div class="h-4 bg-gray-100 rounded w-5/6 mx-auto"></div>
+                <div class="h-10 bg-gray-100 rounded mt-6"></div>
+                <div class="h-10 bg-primary-600 rounded-md mt-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="bg-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2
+            class="text-base text-primary-600 font-semibold tracking-wide uppercase"
+          >
+            Features
+          </h2>
+          <p
+            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Enterprise-grade security
+          </p>
+        </div>
+
+        <div class="mt-16">
+          <div
+            class="space-y-16 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-16"
+          >
+            <div class="text-center">
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary-100 mx-auto"
+              >
+                <i class="fas fa-shield-alt text-primary-600"></i>
+              </div>
+              <h3 class="mt-6 text-lg font-medium text-gray-900">
+                Multi-Factor Auth
+              </h3>
+              <p class="mt-2 text-base text-gray-500">
+                Support for SMS, email, and authenticator apps for enhanced
+                security.
+              </p>
+            </div>
+
+            <div class="text-center">
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary-100 mx-auto"
+              >
+                <i class="fas fa-fingerprint text-primary-600"></i>
+              </div>
+              <h3 class="mt-6 text-lg font-medium text-gray-900">
+                Biometric Login
+              </h3>
+              <p class="mt-2 text-base text-gray-500">
+                Fingerprint and facial recognition for quick, secure access.
+              </p>
+            </div>
+
+            <div class="text-center">
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary-100 mx-auto"
+              >
+                <i class="fas fa-key text-primary-600"></i>
+              </div>
+              <h3 class="mt-6 text-lg font-medium text-gray-900">
+                Passwordless
+              </h3>
+              <p class="mt-2 text-base text-gray-500">
+                Magic links and one-time codes for frictionless authentication.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-primary-600">
+      <div
+        class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8"
+      >
+        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+          <span class="block">Ready to secure your application?</span>
+        </h2>
+        <p class="mt-4 text-lg leading-6 text-primary-100">
+          Get started with our authentication system today.
+        </p>
+        <div class="mt-8 flex justify-center space-x-4">
+          <a
+            href="/auth/login"
+            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-primary-600 bg-white hover:bg-gray-50 transition-colors duration-200"
+          >
+            Login
+          </a>
+          <a
+            href="/auth/login"
+            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-700 hover:bg-primary-800 transition-colors duration-200"
+          >
+            Sign Up
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="border-t border-gray-200 pt-8">
+          <p class="text-base text-gray-400 text-center">
+            &copy; 2023 AuthSecure. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
